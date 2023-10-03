@@ -23,10 +23,10 @@ function varsAndTypes(element) {
 
   let string = 'string cool'
   let number = 47.3
-  let array = [14, 3, 7, 10]
+  var global = 1
   const nummret1 = 1 
 
-  console.log('Jag har visat dom 3 vanligaste datatypperna med let som skapar en lokal variabel. Const skapar en variabel som man inte kan ändra på')
+  console.log('let skapar en lokal variabel. Const skapar en variabel som man inte kan ändra på')
 }
 
 function operators(element) {
@@ -82,6 +82,11 @@ function controlStructures(element) {
 function arraysAndObjects (element) {
   // kod för att visa vad du lärt dig om arrays och objekt
   console.log(['arrays', {and: 'objects'}])
+
+  let array = [14, 3, 7, 10]
+  console.log('array har en längd på ' + array.length)
+  console.log('på den 3e platsen finns nummret ' + array[2])
+  //arrays är lite goofy så dom börjar räkna från 0 och därmed måste man själv tänka lite annorlunda själv, det är antalet hopp man måste göra för att nå en plats.
 }
 
 function domAndEvents (element) {
