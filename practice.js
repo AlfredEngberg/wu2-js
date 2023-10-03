@@ -55,6 +55,28 @@ function controlStructures(element) {
   // if och loopar
   let controlStructures = 'controlStructures'
   console.log(controlStructures, controlStructures ? 'if' : 'loopar')
+
+  var namn1 = 'Affe'
+  var namn2 = 'Affe apa'
+  var siffra1 = 1
+  var siffra2 = 3
+
+  if (namn1 != namn2){
+    console.log('dom heter olika mannen')
+  } else if (namn1 == namn2){
+    console.log('dom heter samma brush')
+  }
+  //if satsen kollar om något är sant, om det är det så gör den vad som står i if satsen och om det är falskt så hoppas det över
+
+  while (siffra1 != siffra2) {
+    console.log(siffra1)
+    siffra1++
+  }
+
+  for(let i = 3; siffra1 == i; i++){
+    console.log('mannen hallå siffra1 är 3')
+  }
+  //for och while loopar gör en sak medans något är sant och det är typ ganska coolt, väldigt användbart om det inte är coolt iaf
 }
 
 function arraysAndObjects (element) {
