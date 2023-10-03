@@ -25,13 +25,29 @@ function varsAndTypes(element) {
   let number = 47.3
   let array = [14, 3, 7, 10]
   const nummret1 = 1 
-  
+
   console.log('Jag har visat dom 3 vanligaste datatypperna med let som skapar en lokal variabel. Const skapar en variabel som man inte kan ändra på')
 }
 
 function operators(element) {
   // kod för att visa vad du lärt dig om operatorer
   console.log('operators === ', 1 === 1)
+
+  let antal1 = 2
+  let antal2 = 6 + 2
+  let fakeAntal = '2'
+  //tildelar antal ett värde
+
+antal1 == antal2
+//kollar om dom har samma värde, men inte om datatypen  är samma och därmed får man att en string kan vara lika med en number
+console.log('yo guys this is ' + (antal1 == fakeAntal))
+
+antal1 === fakeAntal
+console.log('i am a hate on this ' + (antal1 === fakeAntal))
+//med tre likamed så kollar js även datatypen. och därmed är det nu false
+
+antal1 !== antal2
+//kollar om det inte är lika med 
 }
 
 function controlStructures(element) {
