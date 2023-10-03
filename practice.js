@@ -20,6 +20,13 @@ function varsAndTypes(element) {
   // kod för att visa vad du lärt dig om variabler och typer
   let varsAndTypes = 'varsAndTypes'
   console.log(varsAndTypes, typeof(varsAndTypes))
+
+  let string = 'string cool'
+  let number = 47.3
+  let array = [14, 3, 7, 10]
+  const nummret1 = 1 
+  
+  console.log('Jag har visat dom 3 vanligaste datatypperna med let som skapar en lokal variabel. Const skapar en variabel som man inte kan ändra på')
 }
 
 function operators(element) {
