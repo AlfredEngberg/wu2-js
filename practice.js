@@ -87,16 +87,38 @@ function arraysAndObjects (element) {
   console.log('array har en längd på ' + array.length)
   console.log('på den 3e platsen finns nummret ' + array[2])
   //arrays är lite goofy så dom börjar räkna från 0 och därmed måste man själv tänka lite annorlunda själv, det är antalet hopp man måste göra för att nå en plats.
+  
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    console.log(array[index])
+  }
+
+  let a = 3
+  while (a > 0) {
+    console.log(a)    
+    a--
+  }
+
+  array.forEach(element => {
+    console.log(element)
+  });
+
 }
 
 function domAndEvents (element) {
   // kod för att visa vad du lärt dig om DOM och events
   // använd med html och listeners
   console.log(element, 'lyssna efter event för att ändra element')
+
+  const knapp = document.querySelector('#knapp')
+  knapp.addEventListener('click', (e) => {
+    console.log('klick')
+    
+  })
 }
 
 function domManipulation (element) {
   // kod för att visa vad du lärt dig om DOM-manipulation
   // skapa element och lägga till och ta bort
-  element.innerHTML = 'dom manipulation, ändra och lägg till element'
+  // element.innerHTML = 'dom manipulation, ändra och lägg till element'
 }
